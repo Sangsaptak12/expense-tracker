@@ -1,0 +1,357 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: black;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #049410;
+}
+
+.sidebar:hover {
+    width: 270px;
+    transition: .5s;
+}
+
+.logo {
+    margin-top: 50px;
+    height: 80px;
+    padding: 0px;
+}
+
+.menu {
+    padding: relative;
+    height: 88%;
+    list-style: none;
+    padding: 0;
+
+}
+
+.menu .ic2 {
+    padding-right: 20px;
+    display: inline;
+    
+    
+
+}
+
+.menu li {
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover {
+
+    background: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.menu a {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu a span {
+    overflow: hidden;
+}
+
+.menu a i {
+    font-size: 1.2rem;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logout .ic2 {
+    padding-left: 30px;
+    padding-right: 33px;
+}
+
+/* maiin content design.*/
+.main--content {
+    position: relative;
+    background-image: url(bg.jpg);
+    width: 100%;
+    padding: 1rem;
+    background-position: center;
+    background-size: cover;
+
+}
+
+/*--------------------------------------------------HEADER ----------------------------------------- */
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #0b5203;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header--title {
+    color: rgb(244, 239, 239);
+    font-weight: bold;
+}
+
+.user--info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.search--box {
+    background: rgb(237, 237, 237);
+    border: black solid 2px;
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.search--box input {
+    background: transparent;
+    padding: 10px;
+}
+
+.search--box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 05.s ease-out;
+}
+
+.search--box span:hover {
+    transform: scale(1.2);
+}
+
+/*-----------------------------------CONTAINER DETAILS-------------------------*/
+
+.exp--container {
+    background: #fffffffa;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main--title {
+    color:black;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-decoration:underline;
+}
+
+.box1 {
+    background: rgba(16, 28, 3, 0.944);
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 250px;
+    color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+.box1:hover {
+    background: rgba(59, 110, 4, 0.944);
+    transform: scale(1.1);
+}
+
+.payment--card:hover {
+    transform: translateY(-5px);
+}
+
+.card--header {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 15px;
+    font-weight: 200;
+
+}
+
+.rupee {
+    color: #fff;
+    padding-top: 50px;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding-top:50px;
+}
+.amount{
+    display:inline-block;
+    bottom: 30px;
+}
+
+
+/* ---------------------TABLE-----------------------*/
+.table-container {
+    margin-top: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    border-radius: 15px;
+}
+
+#expenses-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#expenses-table th,
+#expenses-table td {
+    border: 2px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#expenses-table th {
+    background-color: #f2f2f2;
+}
+#expenses-table tbody{
+    background-color: rgba(255, 255, 255, 0.592);
+}
+
+#expenses-table .edit-btn,
+#expenses-table .delete-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: black solid 2px;
+    border-radius: 20px;
+    background: transparent;
+}
+
+#expenses-table .delete-btn:hover{
+    background-color: red;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------------------Style for the profile details form */
+
+.profile-details {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.744);
+}
+
+.profile-details h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    color: black;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.form-group input,select,textarea{
+    width: calc(100% - 12px);
+    padding: 8px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 14px;
+}
+.form-group select option{
+    color:black;
+}
+input[type="date"] {
+    width: 100%;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #246404;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #9dd575;
+    color:black;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------ADD EXPENSE------------------------*/
+.addexpense{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.744);
+    align-items: center;
+}
+.addexpense h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
